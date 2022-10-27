@@ -1,7 +1,7 @@
 {
   "name": "qaninja",
   "version": "1.0.0",
-  "description": "Automatização do Estoque",
+  "description": "Testing automation",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run"
