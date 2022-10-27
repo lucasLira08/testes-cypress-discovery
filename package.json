@@ -1,0 +1,19 @@
+{
+  "name": "qaninja",
+  "version": "1.0.0",
+  "description": "Automatização do Estoque",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "keywords": [
+    "nodejs",
+    "cypress",
+    "javascript"
+  ],
+  "author": "David Eduardo",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^10.10.0"
+  }
+}
