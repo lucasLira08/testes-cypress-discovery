@@ -1,0 +1,36 @@
+{
+    
+    "signup":{
+        "name": "David Eduardo",
+            "cpf": "01234567895",
+            "email": "eduardo.ti@gmail.com",
+            "whatsapp": "11988888888",
+             "address":{
+                "zip_code": "63024060",
+                "street": "Rua José Vitorino Sobrinho",
+                "number":"0101",
+                "district": "São José",
+                "landmark": "Green house",
+                "city_uf": "Juazeiro do Norte/CE"
+    },
+    "delivery_method": "Moto",
+            "driving_licence": "driving_licence.jpg"
+    },
+    "inv_cpf":{
+        "name": "David Eduardo",
+            "cpf": "012345678AA",
+            "email": "eduardo.ti@gmail.com",
+            "whatsapp": "11988888888",
+             "address":{
+                "zip_code": "63024060",
+                "street": "Rua José Vitorino Sobrinho",
+                "number":"0101",
+                "district": "São José",
+                "landmark": "Green house",
+                "city_uf": "Juazeiro do Norte/CE"
+    },
+    "delivery_method": "Moto",
+            "driving_licence": "driving_licence.jpg"
+    }
+}
+
