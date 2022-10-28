@@ -1,5 +1,24 @@
 import singupPage from '../pages/signuPage'
 describe('Sign up', () => {
+    
+    var signup = new singupPage()
+
+    before(function(){
+        cy.log('Everything here will be executed once BEFORE ALL test cases.')
+    })
+
+    beforeEach(function(){
+        cy.log('Everything here will be executed everytime BEFORE ALL test cases.')
+    })
+    
+    after(function(){
+        cy.log('Everything here will be executed once AFTER ALL test cases.')
+    })
+
+    afterEach(function(){
+        cy.log('Everything here will be executed everytime AFTER ALL test cases.')
+    })
+    
     it('Be a deliveryman', () => {
         //Deliveryman object:
         var deliveryman = {
@@ -23,15 +42,12 @@ describe('Sign up', () => {
             driving_licence: 'driving_licence.jpg'
         }
         const expectedMessage = 'Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.'
-        var signup = new singupPage()
-
+        
         signup.go()
         signup.fillForm(deliveryman)
         signup.submit()
         signup.modalContentShouldBe(expectedMessage)
 
-        
-        
     });
 
     it('CPF not valid', () => {
@@ -54,8 +70,6 @@ describe('Sign up', () => {
             delivery_method: 'Moto',
             driving_licence: 'driving_licence.jpg'
         }
-
-        var signup = new singupPage()
 
         signup.go()
         signup.fillForm(deliveryman)
